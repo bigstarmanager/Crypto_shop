@@ -4,43 +4,71 @@ export const useSignupFields = () => {
 
     return [
         {
-            id: "name",
-            label: "Name",
+            id: "username",
+            label: "Username",
             required: true,
             input: {
-                
+
                 props: {
-                    
+
                     type: "text",
-                    placeholder: "Joe Bloggs"
+                    placeholder: "Enter Username"
                 },
                 state: useFormInput("")
             }
         },
         {
-            id: "email",
-            label: "Email",
+            id: "telephone",
+            label: "Telephone",
             required: true,
             input: {
-                
+
                 props: {
-                    
-                    type: "email",
-                    placeholder: "joe@bloggs.com"
+
+                    type: "number",
+                    placeholder: "Enter Telephone"
                 },
                 state: useFormInput("")
             }
         },
         {
-            id: "password",
-            label: "Password",
+            id: "createpassword",
+            label: "Create Password",
             required: true,
             input: {
-                
+
                 props: {
-                    
+
                     type: "password",
-                    placeholder: "*********"
+                    placeholder: "Enter Password"
+                },
+                state: useFormInput("")
+            }
+        },
+        {
+            id: "confirmpassword",
+            label: "Confirm Password",
+            required: true,
+            input: {
+
+                props: {
+
+                    type: "password",
+                    placeholder: "Confirm Password"
+                },
+                state: useFormInput("")
+            }
+        },
+        {
+            id: "invitecode",
+            label: "Invitation Code",
+            required: false,
+            input: {
+
+                props: {
+
+                    type: "text",
+                    placeholder: "Enter Invitation Code"
                 },
                 state: useFormInput("")
             }
@@ -53,14 +81,14 @@ export const useLoginFields = () => {
     return [
 
         {
-            id: "email",
-            label: "Email",
+            id: "telephone",
+            label: "Telephone",
             required: true,
             input: {
-                
+
                 props: {
-                    type: "email",
-                    placeholder: "joe@bloggs.com"
+                    type: "number",
+                    placeholder: "Enter Telephone"
                 },
                 state: useFormInput("")
             }
@@ -70,10 +98,10 @@ export const useLoginFields = () => {
             label: "Password",
             required: true,
             input: {
-                
+
                 props: {
                     type: "password",
-                    placeholder: "*******"
+                    placeholder: "Enter Password"
                 },
                 state: useFormInput("")
             }

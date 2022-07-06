@@ -23,6 +23,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Testmodal from './pages/Testmodal';
 
 const App = () => (
 	<IonApp>
@@ -31,6 +32,10 @@ const App = () => (
 
 				<Route exact path="/home">
 					<Home />
+				</Route>
+
+				<Route exact path="/Testmodal">
+					<Testmodal />
 				</Route>
 
 				<Route exact path="/signup">

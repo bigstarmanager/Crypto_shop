@@ -1,15 +1,20 @@
-import { IonButton, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonModal, IonButton, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import { Action } from '../components/Action';
 import styles from './Home.module.scss';
+import React, { useState } from 'react';
+
 
 const Home = () => {
+
+	const [showSheetModal, setshowSheetModal] = useState(true);
+
 
 	return (
 		<IonPage className={styles.homePage}>
 			<IonHeader>
-				{/* <IonToolbar className="ion-no-margin ion-no-padding"> */}
-				<IonImg src="/assets/login2.jpeg" />
-				{/* </IonToolbar> */}
+				<IonToolbar className="ion-no-margin ion-no-padding">
+					<IonImg src="/assets/login2.jpeg" />
+				</IonToolbar>
 			</IonHeader>
 			<IonContent fullscreen>
 
@@ -29,6 +34,11 @@ const Home = () => {
 							</IonRouterLink>
 						</IonRow>
 					</IonGrid>
+					<IonModal isOpen={showSheetModal} cssClass="home-alert-modal">
+						<p>This is modal content</p>
+						<IonButton onClick={() => setshowSheetModal(false)}>Close Modal</IonButton>
+					</IonModal>
+
 				</div>
 			</IonContent>
 

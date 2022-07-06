@@ -1,5 +1,3 @@
-
-
 .homePage {
 
     ion-header {
@@ -12,7 +10,7 @@
 
     ion-footer {
 
-        background-color: #7c3b6a;
+        background-color: #a700ff;
         color: white;
     }
 }
@@ -22,16 +20,16 @@
     height: 100%;
     background-color: #ffffff;
     background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
-    radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        radial-gradient(#b8b8b8 1px, #ffffff 1px);
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
 
-     ion-card-title {
+    ion-card-title {
 
         color: black !important;
         letter-spacing: -0.08rem;
         font-weight: 900 !important;
-     }
+    }
 }
 
 .heading {
@@ -43,4 +41,10 @@
 
     font-size: 1.2rem;
     margin-top: 1rem;
+}
+
+ion-modal {
+    --width: 300px !important;
+    --height: 500px !important;
+    --border-radius: 10px !important;
 }

@@ -1,7 +1,7 @@
-import { IonBackButton, IonButton, IonButtons, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonCardTitle, IonImg, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Signup.module.scss';
 
-import { arrowBack, shapesOutline } from "ionicons/icons";
+import { arrowBack, earthOutline } from "ionicons/icons";
 import CustomField from '../components/CustomField';
 import { useSignupFields } from '../data/fields';
 import { Action } from '../components/Action';
@@ -39,7 +39,7 @@ const Signup = () => {
 
     return (
         <IonPage className={styles.signupPage} id="signup-page">
-            {/* <IonHeader>
+            <IonHeader>
                 <IonToolbar>
 
                     <IonButtons slot="start">
@@ -48,17 +48,17 @@ const Signup = () => {
 
                     <IonButtons slot="end">
                         <IonButton className="custom-button">
-                            <IonIcon icon={shapesOutline} />
+                            <IonIcon icon={earthOutline} />
                         </IonButton>
                     </IonButtons>
                 </IonToolbar>
-            </IonHeader> */}
+            </IonHeader>
             <IonContent fullscreen>
                 <IonGrid className="ion-padding">
                     <IonRow>
                         <IonCol size="12" className={styles.headingText}>
-                            <IonCardTitle>Sign up</IonCardTitle>
-                            <h5>Lets get to know each other</h5>
+                            <IonImg src="/assets/img/app-logo2.png" />
+                            <h5 className='ion-text-center'>The poor and middle class work for money, and the rich let money work for them.</h5>
                         </IonCol>
                     </IonRow>
 
@@ -78,8 +78,12 @@ const Signup = () => {
 
             <IonFooter>
                 <IonGrid className="ion-no-margin ion-no-padding">
-
                     <Action message="Already got an account?" text="Login" link="/login" />
+                    <IonRow>
+                        <IonCol size='12' class='ion-text-center'>
+                            <a href='https://a6yj.org/RyyJ.app' target="blank">Download APP</a>
+                        </IonCol>
+                    </IonRow>
                     <Wave />
                 </IonGrid>
             </IonFooter>

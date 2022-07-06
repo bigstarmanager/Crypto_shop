@@ -1,0 +1,25 @@
+.signupPage {
+
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        --padding-top: 1rem;
+        --padding-bottom: 1rem;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+    }
+}
+
+ion-content {
+    --background: #fcedff;
+}
+
+.headingText {
+
+    h5 {
+
+        margin-top: 0.2rem;
+        color: #d3a6c7;
+    }
+}

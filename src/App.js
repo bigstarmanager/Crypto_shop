@@ -1,7 +1,6 @@
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,8 +20,20 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Signup from './pages/Signup';
-import Login from './pages/Login';
+
+/* Pages */
+import Home from './pages/home/Home';
+import Signup from './pages/signup/Signup';
+import Login from './pages/login/Login';
+import Cart from './pages/cart/Cart';
+import Withdraw from './pages/withdraw/Withdraw';
+import Invite from './pages/invite/Invite';
+import Rules from './pages/rules/Rule';
+import CompanyProfile from './pages/company-profile/CompanyProfile';
+import AgencyCooperation from './pages/agency-cooperation/AgencyCooperation';
+import BonusApplication from './pages/bonus-application/BonusApplication';
+import CompanyQualification from './pages/company-qualification/CompanyQualification';
+import Laundering from './pages/laundering/Laundering';
 import Testmodal from './pages/Testmodal';
 
 const App = () => (
@@ -34,9 +45,6 @@ const App = () => (
 					<Home />
 				</Route>
 
-				<Route exact path="/Testmodal">
-					<Testmodal />
-				</Route>
 
 				<Route exact path="/signup">
 					<Signup />
@@ -48,6 +56,40 @@ const App = () => (
 
 				<Route exact path="/">
 					<Redirect to="/signup" />
+				</Route>
+
+				<Route exact path="/cart">
+					<Cart />
+				</Route>
+
+				<Route exact path="/withdraw">
+					<Withdraw />
+				</Route>
+
+				<Route exact path="/invite">
+					<Invite />
+				</Route>
+				<Route exact path="/rules">
+					<Rules />
+				</Route>
+				<Route exact path="/laundering">
+					<Laundering />
+				</Route>
+				<Route exact path="/company-profile">
+					<CompanyProfile />
+				</Route>
+				<Route exact path="/agency-cooperation">
+					<AgencyCooperation />
+				</Route>
+				<Route exact path="/bonus-application">
+					<BonusApplication />
+				</Route>
+				<Route exact path="/company-qualification">
+					<CompanyQualification />
+				</Route>
+
+				<Route exact path="/Testmodal">
+					<Testmodal />
 				</Route>
 			</IonRouterOutlet>
 		</IonReactRouter>

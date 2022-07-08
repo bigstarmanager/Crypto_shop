@@ -25,8 +25,9 @@ export const useSignupFields = () => {
 
                 props: {
 
-                    type: "number",
-                    placeholder: "Enter Telephone"
+                    type: "tel",
+                    placeholder: "Enter Telephone",
+                    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 },
                 state: useFormInput("")
             }
@@ -87,8 +88,9 @@ export const useLoginFields = () => {
             input: {
 
                 props: {
-                    type: "number",
-                    placeholder: "Enter Telephone"
+                    type: "tel",
+                    placeholder: "Enter Telephone",
+                    pattern: "[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 },
                 state: useFormInput("")
             }

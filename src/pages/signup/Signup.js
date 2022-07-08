@@ -1,13 +1,13 @@
-import { IonBackButton, IonButton, IonButtons, IonCardTitle, IonImg, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonImg, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Signup.module.scss';
 
 import { arrowBack, earthOutline } from "ionicons/icons";
-import CustomField from '../components/CustomField';
-import { useSignupFields } from '../data/fields';
-import { Action } from '../components/Action';
-import { Wave } from '../components/Wave';
+import CustomField from '../../components/CustomField';
+import { useSignupFields } from '../../data/fields';
+import { Action } from '../../components/Action';
+import { Wave } from '../../components/Wave';
 import { useEffect, useState } from 'react';
-import { validateForm } from '../data/utils';
+import { validateForm } from '../../data/utils';
 import { useParams } from 'react-router';
 import { useIonRouter } from "@ionic/react";
 

@@ -1,0 +1,189 @@
+.homePage {
+
+    .homeBanner {
+        height: 30vh;
+        background: url(home-bg.png) no-repeat 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .homeContainer {
+
+        position: relative;
+        background-color: #ffffff;
+        background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
+            radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+        padding: 50px 10px 10px 10px;
+
+        ion-card.homeBalanceCard {
+            background: #fcedff;
+            position: absolute;
+            border-radius: 14px;
+            top: -50px;
+            left: 0;
+            right: 0;
+
+            ion-icon {
+                font-size: 26px;
+                border-radius: 50%;
+                padding: 10px;
+                background: #a700ff;
+            }
+        }
+
+        .homeStartBtn ion-button {
+            font-size: 18px;
+            --padding-bottom: 24px;
+            --padding-top: 24px;
+            --border-radius: 30px;
+            --background: #a700ff;
+
+            ion-router-link {
+                color: white;
+            }
+
+            ion-icon {
+                color: white;
+                margin-right: 10px;
+            }
+        }
+
+        .homeBtnGroup {
+            ion-icon {
+                font-size: 24px;
+                border-radius: 50%;
+                padding: 2px;
+                color: white;
+                background-color: #a700ff;
+                border: 14px solid #e3afff;
+            }
+
+            p {
+                color: black;
+            }
+        }
+
+        .homeCardGroup {
+            h5 {
+                font-weight: bold;
+            }
+
+            ion-card {
+                background: #fcedff;
+                border-radius: 14px;
+            }
+
+            .homeLogoContactBox p {
+                font-size: 13px;
+                color: black;
+            }
+        }
+
+        .homeMemberGroup {
+            h5 {
+                font-weight: bold;
+            }
+
+            ion-card.homeMemberGroup1 {
+                background: linear-gradient(240deg, rgb(12, 36, 66), rgb(79, 116, 146));
+
+                ion-button {
+                    width: 60px;
+                    margin-left: -15px;
+                    font-size: 12px;
+                    --background: #428cff;
+                }
+            }
+
+            ion-card.homeMemberGroup2 {
+                background: url(vip-bg.png) center center / 160px 64px no-repeat, linear-gradient(240deg, rgb(89, 112, 149), rgb(118, 138, 170));
+            }
+
+            ion-card.homeMemberGroup3 {
+                background: url(vip-bg.png) center center / 160px 64px no-repeat, linear-gradient(240deg, rgba(219, 111, 33, 0.99), rgb(249, 153, 5));
+            }
+
+            ion-card.homeMemberGroup4 {
+                background: url(vip-bg.png) center center / 160px 64px no-repeat,
+                    linear-gradient(240deg, rgba(39, 53, 131, 0.99), rgb(47, 67, 177));
+            }
+
+            ion-card {
+                border-radius: 10px;
+
+                ion-card-title {
+                    color: white;
+                }
+
+                ion-card-content p {
+                    font-size: 12px;
+                    color: wheat;
+                }
+
+                .homeMemberGroupImg {
+                    padding: 0;
+                }
+
+                ion-button {
+                    width: 40px;
+                    --background: #a700ff;
+                }
+            }
+        }
+
+        .homeSlideBox {
+            height: 170px;
+
+            h5 {
+                font-weight: bold;
+            }
+
+            ion-card {
+                border-radius: 10px;
+                background: white;
+
+                h6,
+                h3 {
+                    color: black;
+                }
+
+                h6 {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .homeGridBox {
+            h5 {
+                font-weight: bold;
+            }
+
+            ion-img {
+                border-radius: 5px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    ion-footer {
+
+        background-color: #a700ff;
+        color: white;
+
+        ion-icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
+
+
+
+ion-modal {
+    --width: 330px !important;
+    --height: 400px !important;
+    --border-radius: 20px !important;
+    --background: white !important;
+}

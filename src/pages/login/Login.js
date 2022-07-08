@@ -2,12 +2,12 @@ import { IonBackButton, IonButton, IonButtons, IonCardTitle, IonCol, IonContent,
 import styles from './Login.module.scss';
 
 import { arrowBack, earthOutline } from "ionicons/icons";
-import CustomField from '../components/CustomField';
-import { useLoginFields } from '../data/fields';
-import { Action } from '../components/Action';
-import { Wave } from '../components/Wave';
+import CustomField from '../../components/CustomField';
+import { useLoginFields } from '../../data/fields';
+import { Action } from '../../components/Action';
+import { Wave } from '../../components/Wave';
 import { useEffect, useState } from 'react';
-import { validateForm } from '../data/utils';
+import { validateForm } from '../../data/utils';
 import { useParams } from 'react-router';
 import { useIonRouter } from "@ionic/react";
 

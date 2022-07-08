@@ -1,20 +1,40 @@
-/* Using with IonModal Component */
+import React from 'react';
+import { IonList, IonRadioGroup, IonListHeader, IonLabel, IonRadio, IonItem, IonContent } from '@ionic/react';
 
-import React, { useState } from 'react';
-import { IonModal, IonButton, IonContent } from '@ionic/react';
+export const RadioGroupExample: React.FC = () => (
+	<IonContent>
+		<IonList>
+			<IonRadioGroup>
+				<IonListHeader>
+					<IonLabel>Auto Manufacturers</IonLabel>
+				</IonListHeader>
 
-export const Testmodal: React.FC = () => {
-	const [showSheetModal, setshowSheetModal] = useState(true);
+				<IonItem>
+					<IonLabel>Cord</IonLabel>
+					<IonRadio value="cord" />
+				</IonItem>
 
-	return (
-		<IonContent>
-			<IonModal isOpen={showSheetModal} cssClass="my-custom-class">
-				<p>This is modal content</p>
-				<IonButton onClick={() => setshowSheetModal(false)}>Close Modal</IonButton>
-			</IonModal>
-			<IonButton onClick={() => setshowSheetModal(true)}>Show Modal</IonButton>
-		</IonContent>
-	);
-};
+				<IonItem>
+					<IonLabel>Duesenberg</IonLabel>
+					<IonRadio value="duesenberg" allow-empty-selection={tru} />
+				</IonItem>
 
-export default Testmodal;
+				<IonItem>
+					<IonLabel>Hudson</IonLabel>
+					<IonRadio value="hudson" />
+				</IonItem>
+
+				<IonItem>
+					<IonLabel>Packard</IonLabel>
+					<IonRadio value="packard" />
+				</IonItem>
+
+				<IonItem>
+					<IonLabel>Studebaker</IonLabel>
+					<IonRadio value="studebaker" />
+				</IonItem>
+			</IonRadioGroup>
+		</IonList>
+	</IonContent>
+);
+export default RadioGroupExample;

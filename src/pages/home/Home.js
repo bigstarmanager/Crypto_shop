@@ -72,24 +72,28 @@ const Home = () => {
 							<h5 className='ion-text-center color-black ion-no-margin'>COMMISSION</h5>
 						</IonText>
 						<IonRow>
-							<IonCard>
-								<IonCardHeader>
-									<IonCardTitle className='ion-text-center' color='primary'>$ 100.00</IonCardTitle>
-								</IonCardHeader>
+							<IonCol>
+								<IonCard className='ion-no-margin'>
+									<IonCardHeader>
+										<IonCardTitle className='ion-text-center' color='primary'>$ 100.00</IonCardTitle>
+									</IonCardHeader>
 
-								<IonCardContent className='ion-text-center'>
-									Today commission
-								</IonCardContent>
-							</IonCard>
-							<IonCard>
-								<IonCardHeader>
-									<IonCardTitle className='ion-text-center' color='primary'>$ 5000.00</IonCardTitle>
-								</IonCardHeader>
+									<IonCardContent className='ion-text-center'>
+										Today commission
+									</IonCardContent>
+								</IonCard>
+							</IonCol>
+							<IonCol>
+								<IonCard className='ion-no-margin'>
+									<IonCardHeader>
+										<IonCardTitle className='ion-text-center' color='primary'>$ 5000.00</IonCardTitle>
+									</IonCardHeader>
 
-								<IonCardContent className='ion-text-center'>
-									Total commission
-								</IonCardContent>
-							</IonCard>
+									<IonCardContent className='ion-text-center'>
+										Total commission
+									</IonCardContent>
+								</IonCard>
+							</IonCol>
 						</IonRow>
 						<IonRow className={`ion-justify-content-around ${styles.homeLogoContactBox}`}>
 							<IonCol size='3'>

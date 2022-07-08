@@ -16,7 +16,7 @@ export const RadioGroupExample: React.FC = () => (
 
 				<IonItem>
 					<IonLabel>Duesenberg</IonLabel>
-					<IonRadio value="duesenberg" allow-empty-selection={tru} />
+					<IonRadio value="duesenberg" />
 				</IonItem>
 
 				<IonItem>

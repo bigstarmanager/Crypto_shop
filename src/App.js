@@ -26,6 +26,7 @@ import Home from './pages/home/Home';
 import Signup from './pages/signup/Signup';
 import Login from './pages/login/Login';
 import Cart from './pages/cart/Cart';
+import OrderPending from './pages/order-pending/OrderPending';
 import Withdraw from './pages/withdraw/Withdraw';
 import Invite from './pages/invite/Invite';
 import Rules from './pages/rules/Rule';
@@ -35,6 +36,9 @@ import BonusApplication from './pages/bonus-application/BonusApplication';
 import CompanyQualification from './pages/company-qualification/CompanyQualification';
 import Laundering from './pages/laundering/Laundering';
 import Testmodal from './pages/Testmodal';
+import OrderCompleted from './pages/order-completed/OrderCompleted';
+import OrderFreezed from './pages/order-freezed/OrderFreezed';
+import Support from './pages/support/Support';
 
 const App = () => (
 	<IonApp>
@@ -62,6 +66,22 @@ const App = () => (
 					<Cart />
 				</Route>
 
+				<Route exact path="/order-pending">
+					<OrderPending />
+				</Route>
+
+				<Route exact path="/order-completed">
+					<OrderCompleted />
+				</Route>
+
+				<Route exact path="/order-freezed">
+					<OrderFreezed />
+				</Route>
+
+				<Route exact path="/support">
+					<Support />
+				</Route>
+
 				<Route exact path="/withdraw">
 					<Withdraw />
 				</Route>
@@ -69,21 +89,27 @@ const App = () => (
 				<Route exact path="/invite">
 					<Invite />
 				</Route>
+
 				<Route exact path="/rules">
 					<Rules />
 				</Route>
+
 				<Route exact path="/laundering">
 					<Laundering />
 				</Route>
+
 				<Route exact path="/company-profile">
 					<CompanyProfile />
 				</Route>
+
 				<Route exact path="/agency-cooperation">
 					<AgencyCooperation />
 				</Route>
+
 				<Route exact path="/bonus-application">
 					<BonusApplication />
 				</Route>
+
 				<Route exact path="/company-qualification">
 					<CompanyQualification />
 				</Route>

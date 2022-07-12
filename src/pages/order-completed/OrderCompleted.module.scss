@@ -1,19 +1,16 @@
-.companyProfilePage {
+.orderPage {
     ion-toolbar {
 
         --border-style: none;
         --border-color: transparent;
+        // --padding-top: 1rem;
+        // --padding-bottom: 1rem;
         --padding-start: 1rem;
         --padding-end: 1rem;
         --background: #a700ff;
-
-        ion-router-link {
-            color: white;
-            font-size: 20px;
-        }
     }
 
-    .companyProfileContainer {
+    .orderContainer {
         min-height: 100%;
         position: relative;
         background-color: #ffffff;
@@ -23,46 +20,59 @@
         background-position: 0 0, 20px 20px;
         padding: 30px 10px;
 
-        .companyProfileHeading {
+        .orderHeading {
             background: #fcedff;
             border-radius: 10px;
 
             span {
-                border-radius: 50%;
+                border-radius: 10px;
                 background: #a700ff;
                 color: white;
                 font-weight: bold;
-                font-size: 20px;
-                display: inline-block;
-                width: 50px;
-                height: 50px;
+                font-size: 16px;
                 text-align: center;
-                line-height: 50px;
+                padding: 0 10px;
+                margin: 0 5px;
+            }
+
+            span.orderSelected {
+                background: #00189a;
+            }
+
+            p {
+                font-size: 16px;
+                color: black;
+                text-alig: center;
             }
         }
 
-        .companyProfileContent {
+        .orderContent {
             background: #fcedff;
             margin: 20px 0 0 0;
             border-radius: 10px;
+            padding: 0 5px 5px 5px;
 
-            ion-card {
-                border-radius: 10px;
-                color: white;
-                background: linear-gradient(135deg, #a700ff 0%, #00189a 100%);
-
-                h1 {
-                    font-weight: bold;
-                }
+            .orderProductDetail {
+                color: black;
             }
+        }
 
-            ion-button {
-                --background: #a700ff;
-                --border-radius: 20px;
-            }
+        .orderDate {
+            color: black;
+            opacity: 1 !important;
+            padding-left: 0 !important;
+        }
 
-            ion-item {
-                --background: none;
+        .orderStatusBtnContent {
+            align-items: center;
+            display: flex;
+            justify-content: end;
+
+            .orderStatusBtn {
+                color: black;
+                border-radius: 20px;
+                background: yellow;
+                padding: 2px 10px;
             }
         }
     }

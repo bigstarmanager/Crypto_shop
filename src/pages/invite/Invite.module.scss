@@ -3,15 +3,15 @@
 
         --border-style: none;
         --border-color: transparent;
-        --padding-top: 1rem;
-        --padding-bottom: 1rem;
+        // --padding-top: 1rem;
+        // --padding-bottom: 1rem;
         --padding-start: 1rem;
         --padding-end: 1rem;
         --background: #a700ff;
     }
 
     .inviteContainer {
-        height: 100%;
+        min-height: 100%;
         position: relative;
         background-color: #ffffff;
         background-image: radial-gradient(#b8b8b8 1px, transparent 1px),

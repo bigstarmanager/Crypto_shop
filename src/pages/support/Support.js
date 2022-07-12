@@ -16,9 +16,11 @@ const Support = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonButton className="custom-button">
-                            <IonIcon icon={notificationsSharp} />
-                        </IonButton>
+                        <IonRouterLink routerLink='/notification'>
+                            <IonButton className="custom-button">
+                                <IonIcon icon={notificationsSharp} />
+                            </IonButton>
+                        </IonRouterLink>
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
@@ -63,7 +65,7 @@ const Support = () => {
                         <IonRouterLink routerLink="/support">
                             <IonIcon icon={mail} />
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/profile">
+                        <IonRouterLink routerLink="/account">
                             <IonIcon icon={personCircle} />
                         </IonRouterLink>
                     </IonRow>

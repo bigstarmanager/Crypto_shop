@@ -1,0 +1,107 @@
+.accountDetailsPage {
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+        --background: #a700ff;
+
+        ion-router-link {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .accountDetailsContainer {
+        min-height: 100%;
+        position: relative;
+        background-color: #ffffff;
+        background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
+            radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+        padding: 30px 10px;
+
+        .accountDetailsHeading {
+            background: #fcedff;
+            border-radius: 10px;
+
+            span {
+                border-radius: 50%;
+                background: #a700ff;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+
+        .accountDetailsContent {
+            background: #fcedff;
+            margin: 20px 0 0 0;
+            border-radius: 10px;
+
+            ion-card-content {
+                background: white;
+
+                .accountDetailsItem {
+                    border-bottom: 1px solid;
+
+                    .accountStatusCommission {
+                        border-radius: 20px;
+                        color: white;
+                        padding: 0 5px;
+                        font-size: 10px;
+                        background: blue !important;
+                    }
+
+                    .accountStatusOrder {
+                        border-radius: 20px;
+                        color: white;
+                        padding: 0 5px;
+                        font-size: 10px;
+                        background: #a700ff !important;
+                    }
+
+                    .accountStatusWithdraw {
+                        border-radius: 20px;
+                        color: white;
+                        padding: 0 5px;
+                        font-size: 10px;
+                        background: green !important;
+                    }
+
+                    .accountAmount {
+                        font-size: 16px;
+                        color: green;
+                        font-weight: bold;
+                    }
+
+                    .accountDate {
+                        color: black !important;
+                        opacity: 1 !important;
+                        padding: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    ion-footer {
+
+        background-color: #a700ff;
+        color: white;
+
+        ion-icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}

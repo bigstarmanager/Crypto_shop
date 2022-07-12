@@ -39,6 +39,15 @@ import Testmodal from './pages/Testmodal';
 import OrderCompleted from './pages/order-completed/OrderCompleted';
 import OrderFreezed from './pages/order-freezed/OrderFreezed';
 import Support from './pages/support/Support';
+import Account from './pages/account/Account';
+import Recharge from './pages/recharge/Recharge';
+import WithdrawRecord from './pages/withdraw-record/WithdrawRecord';
+import AccountDetails from './pages/account-details/AccountDetails';
+import Notification from './pages/notification/Notification';
+import Shipping from './pages/shipping/Shipping';
+import Bank from './pages/bank/Bank';
+import Password from './pages/password/Password';
+import Language from './pages/language/Language';
 
 const App = () => (
 	<IonApp>
@@ -66,8 +75,44 @@ const App = () => (
 					<Cart />
 				</Route>
 
+				<Route exact path="/account">
+					<Account />
+				</Route>
+
+				<Route exact path="/language">
+					<Language />
+				</Route>
+
+				<Route exact path="/recharge">
+					<Recharge />
+				</Route>
+
 				<Route exact path="/order-pending">
 					<OrderPending />
+				</Route>
+
+				<Route exact path="/withdraw-record">
+					<WithdrawRecord />
+				</Route>
+
+				<Route exact path="/notification">
+					<Notification />
+				</Route>
+
+				<Route exact path="/shipping">
+					<Shipping />
+				</Route>
+
+				<Route exact path="/bank">
+					<Bank />
+				</Route>
+
+				<Route exact path="/password">
+					<Password />
+				</Route>
+
+				<Route exact path="/account-detail">
+					<AccountDetails />
 				</Route>
 
 				<Route exact path="/order-completed">

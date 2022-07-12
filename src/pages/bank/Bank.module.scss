@@ -1,16 +1,19 @@
-.orderPage {
+.bankPage {
     ion-toolbar {
 
         --border-style: none;
         --border-color: transparent;
-        // --padding-top: 1rem;
-        // --padding-bottom: 1rem;
         --padding-start: 1rem;
         --padding-end: 1rem;
         --background: #a700ff;
+
+        ion-router-link {
+            color: white;
+            font-size: 20px;
+        }
     }
 
-    .orderContainer {
+    .bankContainer {
         min-height: 100%;
         position: relative;
         background-color: #ffffff;
@@ -20,59 +23,48 @@
         background-position: 0 0, 20px 20px;
         padding: 30px 10px;
 
-        .orderHeading {
+        .bankHeading {
             background: #fcedff;
             border-radius: 10px;
 
             span {
-                border-radius: 10px;
+                border-radius: 50%;
                 background: #a700ff;
                 color: white;
                 font-weight: bold;
-                font-size: 16px;
+                font-size: 20px;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
                 text-align: center;
-                padding: 0 10px;
-                margin: 0 5px;
-            }
-
-            span.orderSelected {
-                background: #00189a;
-            }
-
-            p {
-                font-size: 16px;
-                color: black;
-                text-alig: center;
+                line-height: 50px;
             }
         }
 
-        .orderContent {
+        .bankContent {
             background: #fcedff;
             margin: 20px 0 0 0;
+            padding-bottom: 20px;
             border-radius: 10px;
-            padding: 0 5px 5px 5px;
 
-            .orderProductDetail {
-                color: black;
+            ion-item {
+                --background: none;
+                margin-bottom: 10px;
             }
-        }
 
-        .orderDate {
-            color: black;
-            opacity: 1 !important;
-            padding-left: 0 !important;
-        }
+            .bankItems p {
+                color: white;
+                background: blue;
+                font-size: 16px;
+                padding: 5px 10px;
+            }
 
-        .orderStatusBtnContent {
-            align-items: center;
-            display: flex;
-            justify-content: flex-end;
+            .bankItems ion-select {
+                color: #3880ff;
+            }
 
-            .orderStatusBtn {
-                color: black;
-                border-radius: 20px;
-                background: red;
-                padding: 2px 10px;
+            .selectLabel {
+                color: #3880ff;
             }
         }
     }

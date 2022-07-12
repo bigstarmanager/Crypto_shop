@@ -47,9 +47,11 @@ const Signup = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonButton className="custom-button">
-                            <IonIcon icon={earthOutline} />
-                        </IonButton>
+                        <IonRouterLink routerLink='/language'>
+                            <IonButton className="custom-button">
+                                <IonIcon icon={earthOutline} />
+                            </IonButton>
+                        </IonRouterLink>
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>

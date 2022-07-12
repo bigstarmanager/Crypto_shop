@@ -1,40 +1,33 @@
 import React from 'react';
-import { IonList, IonRadioGroup, IonListHeader, IonLabel, IonRadio, IonItem, IonContent } from '@ionic/react';
+import { IonRouterOutlet, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonBadge } from '@ionic/react';
+import { calendar, personCircle, map, informationCircle } from 'ionicons/icons';
 
-export const RadioGroupExample: React.FC = () => (
-	<IonContent>
-		<IonList>
-			<IonRadioGroup>
-				<IonListHeader>
-					<IonLabel>Auto Manufacturers</IonLabel>
-				</IonListHeader>
+export const TabsExample: React.FC = () => (
+	<IonRouterOutlet>
+		<IonTabs>
+			<IonTabBar slot="bottom">
+				<IonTabButton tab="schedule">
+					<IonIcon icon={calendar} />
+					<IonLabel>Schedule</IonLabel>
+					<IonBadge>6</IonBadge>
+				</IonTabButton>
 
-				<IonItem>
-					<IonLabel>Cord</IonLabel>
-					<IonRadio value="cord" />
-				</IonItem>
+				<IonTabButton tab="speakers">
+					<IonIcon icon={personCircle} />
+					<IonLabel>Speakers</IonLabel>
+				</IonTabButton>
 
-				<IonItem>
-					<IonLabel>Duesenberg</IonLabel>
-					<IonRadio value="duesenberg" />
-				</IonItem>
+				<IonTabButton tab="map">
+					<IonIcon icon={map} />
+					<IonLabel>Map</IonLabel>
+				</IonTabButton>
 
-				<IonItem>
-					<IonLabel>Hudson</IonLabel>
-					<IonRadio value="hudson" />
-				</IonItem>
-
-				<IonItem>
-					<IonLabel>Packard</IonLabel>
-					<IonRadio value="packard" />
-				</IonItem>
-
-				<IonItem>
-					<IonLabel>Studebaker</IonLabel>
-					<IonRadio value="studebaker" />
-				</IonItem>
-			</IonRadioGroup>
-		</IonList>
-	</IonContent>
+				<IonTabButton tab="about">
+					<IonIcon icon={informationCircle} />
+					<IonLabel>About</IonLabel>
+				</IonTabButton>
+			</IonTabBar>
+		</IonTabs>
+	</IonRouterOutlet>
 );
-export default RadioGroupExample;
+export default TabsExample;

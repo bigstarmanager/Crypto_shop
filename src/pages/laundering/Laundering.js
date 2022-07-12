@@ -53,7 +53,7 @@ const Laundering = () => {
                         <IonRouterLink routerLink="/support">
                             <IonIcon icon={mail} />
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/profile">
+                        <IonRouterLink routerLink="/account">
                             <IonIcon icon={personCircle} />
                         </IonRouterLink>
                     </IonRow>

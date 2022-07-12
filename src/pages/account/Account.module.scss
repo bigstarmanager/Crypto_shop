@@ -1,0 +1,144 @@
+.accountPage {
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        // --padding-top: 1rem;
+        // --padding-bottom: 1rem;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+        --background: #a700ff;
+    }
+
+    .accountContainer {
+        min-height: 100%;
+        position: relative;
+        background-color: #ffffff;
+        background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
+            radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+        padding: 30px 10px;
+
+        .accountHeading {
+            background: #fcedff;
+            border-radius: 10px;
+
+            .accountHeadingItem {
+                border-bottom: 1px solid rgb(195, 195, 195);
+
+                h2 {
+                    margin-bottom: 0;
+                    color: black;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+            }
+
+            ion-img {
+                border-radius: 50%;
+                border: 1px solid #a700ff;
+            }
+
+            ion-router-link {
+                ion-icon {
+                    font-size: 20px;
+                    border: 1px solid #a700ff;
+                    border-radius: 50%;
+                    color: #a700ff;
+                }
+            }
+
+            .accountDisplayAmount {
+                .accountAvailableAmount {
+                    color: #a700ff;
+                    font-size: 16px;
+                }
+
+                .accountFreezonAmount {
+                    color: red;
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                margin: 0 10px;
+            }
+
+            .accountName {
+                font-size: 18px;
+                color: black;
+                font-weight: bold;
+            }
+
+            .accountLevel {
+                color: blue;
+                font-size: 16px;
+            }
+
+            .accountInvitationCode {
+                font-weight: bold;
+                color: black;
+            }
+
+        }
+
+        .accountContent {
+            background: #fcedff;
+            margin: 20px 0 0 0;
+            border-radius: 10px;
+
+            ion-card {
+                border-radius: 10px;
+                background: white
+            }
+
+            ion-row {
+                border-bottom: 1px solid rgb(195, 195, 195);
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .accountLinkTabTitle {
+                display: flex;
+                align-items: center;
+
+                ion-icon {
+                    font-size: 30px;
+                    border-radius: 10px;
+                    background: #e5b6ff;
+                    color: #a700ff;
+                    padding: 5px;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: #a700ff;
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+            }
+
+            .accountLinkTabArrow {
+                ion-icon {
+                    font-size: 20px;
+                    color: #a700ff;
+                }
+            }
+        }
+    }
+
+
+    ion-footer {
+
+        background-color: #a700ff;
+        color: white;
+
+        ion-icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}

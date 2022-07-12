@@ -18,7 +18,7 @@ const Rule = () => {
                             </IonButtons>
                         </IonCol>
                         <IonCol>
-                            <h5 className='ion-text-center ion-no-margin'>Introduction</h5>
+                            <h5 className='ion-text-center ion-no-margin'>INTRODUCTION</h5>
                         </IonCol>
                         <IonCol>
                             <IonButtons className='ion-justify-content-end'>
@@ -53,7 +53,7 @@ const Rule = () => {
                         <IonRouterLink routerLink="/support">
                             <IonIcon icon={mail} />
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/profile">
+                        <IonRouterLink routerLink="/account">
                             <IonIcon icon={personCircle} />
                         </IonRouterLink>
                     </IonRow>

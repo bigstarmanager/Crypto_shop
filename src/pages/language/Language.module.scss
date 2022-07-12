@@ -1,0 +1,149 @@
+.languagePage {
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        // --padding-top: 1rem;
+        // --padding-bottom: 1rem;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+        --background: #a700ff;
+    }
+
+    .languageContainer {
+        min-height: 100%;
+        position: relative;
+        background-color: #ffffff;
+        background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
+            radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+        padding: 30px 10px;
+
+        .languageHeading {
+            background: #fcedff;
+            border-radius: 10px;
+
+            .languageHeadingItem {
+                border-bottom: 1px solid rgb(195, 195, 195);
+
+                h2 {
+                    margin-bottom: 0;
+                    color: black;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+            }
+
+            ion-img {
+                border-radius: 50%;
+                border: 1px solid #a700ff;
+            }
+
+            ion-router-link {
+                ion-icon {
+                    font-size: 20px;
+                    border: 1px solid #a700ff;
+                    border-radius: 50%;
+                    color: #a700ff;
+                }
+            }
+
+            .languageDisplayAmount {
+                .languageAvailableAmount {
+                    color: #a700ff;
+                    font-size: 16px;
+                }
+
+                .languageFreezonAmount {
+                    color: red;
+                    font-size: 16px;
+                }
+            }
+
+            span {
+                margin: 0 10px;
+            }
+
+            .languageName {
+                font-size: 18px;
+                color: black;
+                font-weight: bold;
+            }
+
+            .languageLevel {
+                color: blue;
+                font-size: 16px;
+            }
+
+            .languageInvitationCode {
+                font-weight: bold;
+                color: black;
+            }
+
+        }
+
+        .languageContent {
+            background: #fcedff;
+            margin: 20px 0 0 0;
+            border-radius: 10px;
+
+            p {
+                font-size: 20px;
+                color: black;
+            }
+
+            ion-card {
+                border-radius: 10px;
+                background: white
+            }
+
+            ion-row {
+                border-bottom: 1px solid rgb(195, 195, 195);
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            .languageLinkTabTitle {
+                display: flex;
+                align-items: center;
+
+                ion-icon {
+                    font-size: 30px;
+                    border-radius: 10px;
+                    background: #e5b6ff;
+                    color: #a700ff;
+                    padding: 5px;
+                }
+
+                span {
+                    font-size: 16px;
+                    color: #a700ff;
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+            }
+
+            .languageLinkTabArrow {
+                ion-icon {
+                    font-size: 20px;
+                    color: #a700ff;
+                }
+            }
+        }
+    }
+
+
+    ion-footer {
+
+        background-color: #a700ff;
+        color: white;
+
+        ion-icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}

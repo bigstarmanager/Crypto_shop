@@ -348,7 +348,7 @@ const Home = () => {
 						<IonRouterLink routerLink="/home">
 							<IonIcon icon={home} />
 						</IonRouterLink>
-						<IonRouterLink routerLink="/order">
+						<IonRouterLink routerLink="/order-pending">
 							<IonIcon icon={checkbox} />
 						</IonRouterLink>
 						<IonRouterLink routerLink="/cart">

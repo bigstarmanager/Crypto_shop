@@ -1,2 +1,2 @@
-yarn install
-ionic serve
+#yarn install
+#ionic serve

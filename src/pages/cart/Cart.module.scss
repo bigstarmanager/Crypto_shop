@@ -3,8 +3,6 @@
 
         --border-style: none;
         --border-color: transparent;
-        // --padding-top: 1rem;
-        // --padding-bottom: 1rem;
         --padding-start: 1rem;
         --padding-end: 1rem;
         --background: #a700ff;
@@ -61,18 +59,6 @@
                 --background: #a700ff;
                 --border-radius: 20px;
             }
-        }
-    }
-
-
-    ion-footer {
-
-        background-color: #a700ff;
-        color: white;
-
-        ion-icon {
-            font-size: 24px;
-            color: white;
         }
     }
 }

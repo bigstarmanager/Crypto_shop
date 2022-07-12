@@ -1,8 +1,8 @@
-import { IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Account.module.scss';
 
 import { accessibilityOutline, notificationsOutline, arrowBack, batteryChargingOutline, cardOutline, notificationsSharp, peopleOutline, earthOutline } from "ionicons/icons";
-import { home, checkbox, logOutOutline, cartOutline, lockOpenOutline, cashOutline, rocket, mail, personCircle, arrowForwardOutline, card, gitBranch, documentTextOutline } from "ionicons/icons";
+import { logOutOutline, cartOutline, lockOpenOutline, cashOutline, arrowForwardOutline, gitBranch, documentTextOutline } from "ionicons/icons";
 
 
 const Account = () => {
@@ -16,7 +16,7 @@ const Account = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonRouterLink routerLink='/notification'>
+                        <IonRouterLink routerLink="/app/notification">
                             <IonButton className="custom-button">
                                 <IonIcon icon={notificationsSharp} />
                             </IonButton>
@@ -39,7 +39,7 @@ const Account = () => {
                                 <IonRow className='ion-align-items-center'>
                                     <span>InvitationCode:</span>
                                     <span className={styles.accountInvitationCode}>EW8JG2</span>
-                                    <IonRouterLink routerLink="/invite">
+                                    <IonRouterLink routerLink="/app/invite">
                                         <IonIcon icon={gitBranch} />
                                     </IonRouterLink>
                                 </IonRow>
@@ -73,7 +73,7 @@ const Account = () => {
                         </IonRow>
                     </IonCard>
                     <IonCard className={`ion-padding-start ion-padding-end ${styles.accountContent}`}>
-                        <IonRouterLink routerLink="/withdraw">
+                        <IonRouterLink routerLink="/app/withdraw">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={cardOutline} />
@@ -86,7 +86,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/teams">
+                        <IonRouterLink routerLink="/app/teams">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={peopleOutline} />
@@ -99,7 +99,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/recharge">
+                        <IonRouterLink routerLink="/app/recharge">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={batteryChargingOutline} />
@@ -112,7 +112,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/withdraw-record">
+                        <IonRouterLink routerLink="/app/withdraw-record">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={documentTextOutline} />
@@ -125,7 +125,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/account-detail">
+                        <IonRouterLink routerLink="/app/account-detail">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={accessibilityOutline} />
@@ -138,7 +138,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/notification">
+                        <IonRouterLink routerLink="/app/notification">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={notificationsOutline} />
@@ -151,7 +151,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/shipping">
+                        <IonRouterLink routerLink="/app/shipping">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={cartOutline} />
@@ -164,7 +164,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/bank">
+                        <IonRouterLink routerLink="/app/bank">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={cashOutline} />
@@ -177,7 +177,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/password">
+                        <IonRouterLink routerLink="/app/password">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={lockOpenOutline} />
@@ -190,7 +190,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/language">
+                        <IonRouterLink routerLink="/app/language">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />
@@ -219,28 +219,6 @@ const Account = () => {
                     </IonCard>
                 </div>
             </IonContent>
-
-            <IonFooter className='ion-padding-top ion-padding-bottom'>
-                <IonGrid className='ion-no-padding' >
-                    <IonRow className='ion-justify-content-around'>
-                        <IonRouterLink routerLink="/home">
-                            <IonIcon icon={home} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/order-pending">
-                            <IonIcon icon={checkbox} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/cart">
-                            <IonIcon icon={rocket} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/support">
-                            <IonIcon icon={mail} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/account">
-                            <IonIcon icon={personCircle} />
-                        </IonRouterLink>
-                    </IonRow>
-                </IonGrid>
-            </IonFooter>
         </IonPage>
     );
 };

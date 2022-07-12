@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonIcon, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { home, checkbox, rocket, mail, personCircle } from 'ionicons/icons';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -50,121 +51,144 @@ import Password from './pages/password/Password';
 import Language from './pages/language/Language';
 
 const App = () => (
-	<IonApp>
+	< IonApp >
 		<IonReactRouter>
 			<IonRouterOutlet>
-
-				<Route exact path="/home">
-					<Home />
-				</Route>
-
-
 				<Route exact path="/signup">
 					<Signup />
 				</Route>
-
 				<Route exact path="/login">
 					<Login />
 				</Route>
-
 				<Route exact path="/">
 					<Redirect to="/signup" />
 				</Route>
+				<Route
+					path="/app"
+					render={() => (
+						<IonTabs>
+							<IonRouterOutlet>
 
-				<Route exact path="/cart">
-					<Cart />
-				</Route>
+								<Route exact path="/app/home">
+									<Home />
+								</Route>
 
-				<Route exact path="/account">
-					<Account />
-				</Route>
+								<Route exact path="/app/cart">
+									<Cart />
+								</Route>
 
-				<Route exact path="/language">
-					<Language />
-				</Route>
+								<Route exact path="/app/account">
+									<Account />
+								</Route>
 
-				<Route exact path="/recharge">
-					<Recharge />
-				</Route>
+								<Route exact path="/app/language">
+									<Language />
+								</Route>
 
-				<Route exact path="/order-pending">
-					<OrderPending />
-				</Route>
+								<Route exact path="/app/recharge">
+									<Recharge />
+								</Route>
 
-				<Route exact path="/withdraw-record">
-					<WithdrawRecord />
-				</Route>
+								<Route exact path="/app/order-pending">
+									<OrderPending />
+								</Route>
 
-				<Route exact path="/notification">
-					<Notification />
-				</Route>
+								<Route exact path="/app/withdraw-record">
+									<WithdrawRecord />
+								</Route>
 
-				<Route exact path="/shipping">
-					<Shipping />
-				</Route>
+								<Route exact path="/app/notification">
+									<Notification />
+								</Route>
 
-				<Route exact path="/bank">
-					<Bank />
-				</Route>
+								<Route exact path="/app/shipping">
+									<Shipping />
+								</Route>
 
-				<Route exact path="/password">
-					<Password />
-				</Route>
+								<Route exact path="/app/bank">
+									<Bank />
+								</Route>
 
-				<Route exact path="/account-detail">
-					<AccountDetails />
-				</Route>
+								<Route exact path="/app/password">
+									<Password />
+								</Route>
 
-				<Route exact path="/order-completed">
-					<OrderCompleted />
-				</Route>
+								<Route exact path="/app/account-detail">
+									<AccountDetails />
+								</Route>
 
-				<Route exact path="/order-freezed">
-					<OrderFreezed />
-				</Route>
+								<Route exact path="/app/order-completed">
+									<OrderCompleted />
+								</Route>
 
-				<Route exact path="/support">
-					<Support />
-				</Route>
+								<Route exact path="/app/order-freezed">
+									<OrderFreezed />
+								</Route>
 
-				<Route exact path="/withdraw">
-					<Withdraw />
-				</Route>
+								<Route exact path="/app/support">
+									<Support />
+								</Route>
 
-				<Route exact path="/invite">
-					<Invite />
-				</Route>
+								<Route exact path="/app/withdraw">
+									<Withdraw />
+								</Route>
 
-				<Route exact path="/rules">
-					<Rules />
-				</Route>
+								<Route exact path="/app/invite">
+									<Invite />
+								</Route>
 
-				<Route exact path="/laundering">
-					<Laundering />
-				</Route>
+								<Route exact path="/app/rules">
+									<Rules />
+								</Route>
 
-				<Route exact path="/company-profile">
-					<CompanyProfile />
-				</Route>
+								<Route exact path="/app/laundering">
+									<Laundering />
+								</Route>
 
-				<Route exact path="/agency-cooperation">
-					<AgencyCooperation />
-				</Route>
+								<Route exact path="/app/company-profile">
+									<CompanyProfile />
+								</Route>
 
-				<Route exact path="/bonus-application">
-					<BonusApplication />
-				</Route>
+								<Route exact path="/app/agency-cooperation">
+									<AgencyCooperation />
+								</Route>
 
-				<Route exact path="/company-qualification">
-					<CompanyQualification />
-				</Route>
+								<Route exact path="/app/bonus-application">
+									<BonusApplication />
+								</Route>
 
-				<Route exact path="/Testmodal">
-					<Testmodal />
-				</Route>
+								<Route exact path="/app/company-qualification">
+									<CompanyQualification />
+								</Route>
+
+								<Route exact path="/app/Testmodal">
+									<Testmodal />
+								</Route>
+							</IonRouterOutlet>
+							<IonTabBar slot="bottom">
+								<IonTabButton tab="home" href="/app/home" className='navigation-tab'>
+									<IonIcon icon={home} />
+								</IonTabButton>
+								<IonTabButton tab="order-pending" href="/app/order-pending" className='navigation-tab'>
+									<IonIcon icon={checkbox} />
+								</IonTabButton>
+								<IonTabButton tab="cart" href="/app/cart" className='navigation-tab'>
+									<IonIcon icon={rocket} />
+								</IonTabButton>
+								<IonTabButton tab="support" href="/app/support" className='navigation-tab'>
+									<IonIcon icon={mail} />
+								</IonTabButton>
+								<IonTabButton tab="account" href="/app/account" className='navigation-tab'>
+									<IonIcon icon={personCircle} />
+								</IonTabButton>
+							</IonTabBar>
+						</IonTabs>
+					)}
+				/>
 			</IonRouterOutlet>
+
 		</IonReactRouter>
-	</IonApp>
+	</IonApp >
 );
 
 export default App;

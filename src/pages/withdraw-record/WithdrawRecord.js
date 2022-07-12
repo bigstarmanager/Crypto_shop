@@ -1,8 +1,7 @@
-import { IonBackButton, IonButton, IonButtons, IonDatetime, IonCheckbox, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonRouterLink, IonRow, IonToolbar, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonBackButton, IonButtons, IonDatetime, IonCard, IonCol, IonContent, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar, IonCardTitle, IonCardContent } from '@ionic/react';
 import styles from './WithdrawRecord.module.scss';
 
-import { arrowBack, chatbubbleEllipses, notificationsSharp } from "ionicons/icons";
-import { home, checkbox, rocket, mail, personCircle, logoUsd, card, gitBranch } from "ionicons/icons";
+import { arrowBack, notificationsSharp } from "ionicons/icons";
 
 
 const WithdrawRecord = () => {
@@ -22,7 +21,7 @@ const WithdrawRecord = () => {
                         </IonCol>
                         <IonCol>
                             <IonButtons className='ion-justify-content-end'>
-                                <IonRouterLink className='ion-text-right' routerLink="/notification">
+                                <IonRouterLink className='ion-text-right' routerLink="/app/notification">
                                     <IonIcon icon={notificationsSharp} />
                                 </IonRouterLink>
                             </IonButtons>
@@ -161,28 +160,6 @@ const WithdrawRecord = () => {
                     </IonCard>
                 </div>
             </IonContent>
-
-            <IonFooter className='ion-padding-top ion-padding-bottom'>
-                <IonGrid className='ion-no-padding' >
-                    <IonRow className='ion-justify-content-around'>
-                        <IonRouterLink routerLink="/home">
-                            <IonIcon icon={home} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/order-pending">
-                            <IonIcon icon={checkbox} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/cart">
-                            <IonIcon icon={rocket} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/support">
-                            <IonIcon icon={mail} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/account">
-                            <IonIcon icon={personCircle} />
-                        </IonRouterLink>
-                    </IonRow>
-                </IonGrid>
-            </IonFooter>
         </IonPage>
     );
 };

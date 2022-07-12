@@ -292,3 +292,7 @@ http://ionicframework.com/docs/theming/ */
 .custom-back {
   background-color: transparent !important;
 }
+
+ion-tab-button {
+  background-color: #a700ff;
+}

@@ -1,4 +1,4 @@
-import { IonBackButton, IonButton, IonButtons, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Login.module.scss';
 
 import { arrowBack, earthOutline } from "ionicons/icons";
@@ -24,7 +24,7 @@ const Login = () => {
         setErrors(errors);
 
         if (!errors.length) {
-            router.push("/home");
+            router.push("/app/home");
             //  Submit your form here
         }
     }
@@ -47,7 +47,7 @@ const Login = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonRouterLink routerLink='/language'>
+                        <IonRouterLink routerLink='/app/language'>
                             <IonButton className="custom-button">
                                 <IonIcon icon={earthOutline} />
                             </IonButton>

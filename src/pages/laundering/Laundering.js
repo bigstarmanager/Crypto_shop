@@ -1,8 +1,7 @@
-import { IonBackButton, IonImg, IonButtons, IonCheckbox, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonImg, IonButtons, IonCard, IonCol, IonContent, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Laundering.module.scss';
 
 import { arrowBack, chatbubbleEllipses } from "ionicons/icons";
-import { home, checkbox, rocket, mail, personCircle, logoUsd, card, gitBranch } from "ionicons/icons";
 
 
 const Laundering = () => {
@@ -37,28 +36,6 @@ const Laundering = () => {
                     </IonCard>
                 </div>
             </IonContent>
-
-            <IonFooter className='ion-padding-top ion-padding-bottom'>
-                <IonGrid className='ion-no-padding' >
-                    <IonRow className='ion-justify-content-around'>
-                        <IonRouterLink routerLink="/home">
-                            <IonIcon icon={home} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/order-pending">
-                            <IonIcon icon={checkbox} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/cart">
-                            <IonIcon icon={rocket} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/support">
-                            <IonIcon icon={mail} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/account">
-                            <IonIcon icon={personCircle} />
-                        </IonRouterLink>
-                    </IonRow>
-                </IonGrid>
-            </IonFooter>
         </IonPage>
     );
 };

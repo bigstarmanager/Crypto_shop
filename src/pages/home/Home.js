@@ -1,5 +1,5 @@
-import { IonModal, IonCard, IonButton, IonText, IonCol, IonContent, IonFooter, IonGrid, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonCardContent, IonCardHeader, IonCardTitle, IonSlides, IonSlide } from '@ionic/react';
-import { home, checkbox, rocket, mail, personCircle, logoUsd, card, gitBranch } from "ionicons/icons";
+import { IonModal, IonCard, IonButton, IonText, IonCol, IonContent, IonGrid, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonCardContent, IonCardHeader, IonCardTitle, IonSlides, IonSlide } from '@ionic/react';
+import { rocket, logoUsd, card, gitBranch } from "ionicons/icons";
 import styles from './Home.module.scss';
 import React, { useState } from 'react';
 
@@ -21,7 +21,6 @@ const Home = () => {
 
 	return (
 		<IonPage className={styles.homePage}>
-
 			<IonContent fullscreen>
 				<IonRow className={styles.homeBanner}>
 				</IonRow>
@@ -45,7 +44,7 @@ const Home = () => {
 					</IonCard>
 					<IonGrid className={`ion-padding-top ${styles.homeStartBtn}`}>
 						<IonButton expand="block">
-							<IonRouterLink routerLink="/cart">
+							<IonRouterLink routerLink="/app/cart">
 								<IonIcon icon={rocket} />
 								START
 							</IonRouterLink>
@@ -57,11 +56,11 @@ const Home = () => {
 								<IonIcon icon={logoUsd} />
 								<p className='ion-no-margin'>Deposit</p>
 							</IonRouterLink>
-							<IonRouterLink className='ion-padding ion-text-center' routerLink="/withdraw">
+							<IonRouterLink className='ion-padding ion-text-center' routerLink="/app/withdraw">
 								<IonIcon icon={card} />
 								<p className='ion-no-margin'>Withdraw</p>
 							</IonRouterLink>
-							<IonRouterLink className='ion-padding ion-text-center' routerLink="/invite">
+							<IonRouterLink className='ion-padding ion-text-center' routerLink="/app/invite">
 								<IonIcon icon={gitBranch} />
 								<p className='ion-no-margin'>Invitation</p>
 							</IonRouterLink>
@@ -97,19 +96,19 @@ const Home = () => {
 						</IonRow>
 						<IonRow className={`ion-justify-content-around ${styles.homeLogoContactBox}`}>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/rules">
+								<IonRouterLink className='ion-text-center' routerLink="/app/rules">
 									<IonImg src="/assets/img/company-profile.png" />
 									<p>Rules Description</p>
 								</IonRouterLink>
 							</IonCol>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/company-profile">
+								<IonRouterLink className='ion-text-center' routerLink="/app/company-profile">
 									<IonImg src="/assets/img/Rule-description.png" />
 									<p>Company Profile</p>
 								</IonRouterLink>
 							</IonCol>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/agency-cooperation">
+								<IonRouterLink className='ion-text-center' routerLink="/app/agency-cooperation">
 									<IonImg src="/assets/img/Agent-cooperation2.png" />
 									<p>Agency cooperation</p>
 								</IonRouterLink>
@@ -117,19 +116,19 @@ const Home = () => {
 						</IonRow>
 						<IonRow className={`ion-justify-content-around ${styles.homeLogoContactBox}`}>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/company-qualification">
+								<IonRouterLink className='ion-text-center' routerLink="/app/company-qualification">
 									<IonImg src="/assets/img/Calculate-revenue2.png" />
 									<p>Company qualification</p>
 								</IonRouterLink>
 							</IonCol>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/laundering">
+								<IonRouterLink className='ion-text-center' routerLink="/app/laundering">
 									<IonImg src="/assets/img/menu-5.png" />
 									<p>Limit money laundering</p>
 								</IonRouterLink>
 							</IonCol>
 							<IonCol size='3'>
-								<IonRouterLink className='ion-text-center' routerLink="/bonus-application">
+								<IonRouterLink className='ion-text-center' routerLink="/app/bonus-application">
 									<IonImg src="/assets/img/menu-6.png" />
 									<p>Lucky Bonus Application</p>
 								</IonRouterLink>
@@ -340,29 +339,6 @@ const Home = () => {
 				</IonModal>
 
 			</IonContent>
-
-
-			<IonFooter className='ion-padding-top ion-padding-bottom'>
-				<IonGrid className='ion-no-padding' >
-					<IonRow className='ion-justify-content-around'>
-						<IonRouterLink routerLink="/home">
-							<IonIcon icon={home} />
-						</IonRouterLink>
-						<IonRouterLink routerLink="/order-pending">
-							<IonIcon icon={checkbox} />
-						</IonRouterLink>
-						<IonRouterLink routerLink="/cart">
-							<IonIcon icon={rocket} />
-						</IonRouterLink>
-						<IonRouterLink routerLink="/support">
-							<IonIcon icon={mail} />
-						</IonRouterLink>
-						<IonRouterLink routerLink="/account">
-							<IonIcon icon={personCircle} />
-						</IonRouterLink>
-					</IonRow>
-				</IonGrid>
-			</IonFooter>
 		</IonPage >
 	);
 };

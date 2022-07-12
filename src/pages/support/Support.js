@@ -1,9 +1,7 @@
-import { IonBackButton, IonButton, IonButtons, IonCard, IonCardTitle, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonCard, IonCardTitle, IonContent, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Support.module.scss';
 
 import { arrowBack, notificationsSharp } from "ionicons/icons";
-import { home, checkbox, rocket, mail, personCircle, logoUsd, card, gitBranch } from "ionicons/icons";
-
 
 const Support = () => {
 
@@ -16,7 +14,7 @@ const Support = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonRouterLink routerLink='/notification'>
+                        <IonRouterLink routerLink='/app/notification'>
                             <IonButton className="custom-button">
                                 <IonIcon icon={notificationsSharp} />
                             </IonButton>
@@ -49,28 +47,6 @@ const Support = () => {
                     </IonCard>
                 </div>
             </IonContent>
-
-            <IonFooter className='ion-padding-top ion-padding-bottom'>
-                <IonGrid className='ion-no-padding' >
-                    <IonRow className='ion-justify-content-around'>
-                        <IonRouterLink routerLink="/home">
-                            <IonIcon icon={home} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/order-pending">
-                            <IonIcon icon={checkbox} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/cart">
-                            <IonIcon icon={rocket} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/support">
-                            <IonIcon icon={mail} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/account">
-                            <IonIcon icon={personCircle} />
-                        </IonRouterLink>
-                    </IonRow>
-                </IonGrid>
-            </IonFooter>
         </IonPage>
     );
 };

@@ -1,9 +1,8 @@
-import { IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './OrderFreezed.module.scss';
 
 import { IonDatetime } from '@ionic/react';
 import { arrowBack, notificationsSharp } from "ionicons/icons";
-import { home, checkbox, rocket, mail, personCircle, logoUsd, card, gitBranch } from "ionicons/icons";
 
 
 const OrderFreezed = () => {
@@ -17,7 +16,7 @@ const OrderFreezed = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        <IonRouterLink routerLink='/notification'>
+                        <IonRouterLink routerLink='/app/notification'>
                             <IonButton className="custom-button">
                                 <IonIcon icon={notificationsSharp} />
                             </IonButton>
@@ -30,13 +29,13 @@ const OrderFreezed = () => {
                     <IonCard className={`ion-padding-top ion-no-margin ${styles.orderHeading}`}>
                         <IonRow className='ion-align-items-center'>
                             <IonCol className='ion-text-center'>
-                                <IonRouterLink routerLink="/order-pending">
+                                <IonRouterLink routerLink="/app/order-pending">
                                     <span>PENDING</span>
                                 </IonRouterLink>
-                                <IonRouterLink routerLink="/order-completed">
+                                <IonRouterLink routerLink="/app/order-completed">
                                     <span>COMPLETED</span>
                                 </IonRouterLink>
-                                <IonRouterLink routerLink="/order-freezed">
+                                <IonRouterLink routerLink="/app/order-freezed">
                                     <span className={styles.orderSelected}>FREEZED</span>
                                 </IonRouterLink>
                             </IonCol>
@@ -203,28 +202,6 @@ const OrderFreezed = () => {
                     </IonCard>
                 </div>
             </IonContent>
-
-            <IonFooter className='ion-padding-top ion-padding-bottom'>
-                <IonGrid className='ion-no-padding' >
-                    <IonRow className='ion-justify-content-around'>
-                        <IonRouterLink routerLink="/home">
-                            <IonIcon icon={home} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/order-pending">
-                            <IonIcon icon={checkbox} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/cart">
-                            <IonIcon icon={rocket} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/support">
-                            <IonIcon icon={mail} />
-                        </IonRouterLink>
-                        <IonRouterLink routerLink="/account">
-                            <IonIcon icon={personCircle} />
-                        </IonRouterLink>
-                    </IonRow>
-                </IonGrid>
-            </IonFooter>
         </IonPage>
     );
 };

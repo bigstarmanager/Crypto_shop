@@ -1,8 +1,7 @@
-import { IonBackButton, IonButton, IonButtons, IonCard, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonImg, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
+import { IonBackButton, IonButtons, IonCard, IonCol, IonContent, IonHeader, IonIcon, IonPage, IonRouterLink, IonRow, IonToolbar } from '@ionic/react';
 import styles from './Language.module.scss';
 
-import { accessibilityOutline, notificationsOutline, arrowBack, batteryChargingOutline, cardOutline, notificationsSharp, peopleOutline, earthOutline } from "ionicons/icons";
-import { home, checkbox, logOutOutline, cartOutline, lockOpenOutline, cashOutline, rocket, mail, personCircle, arrowForwardOutline, card, gitBranch, documentTextOutline } from "ionicons/icons";
+import { arrowForwardOutline, earthOutline, arrowBack } from "ionicons/icons";
 
 
 const Language = () => {
@@ -16,11 +15,7 @@ const Language = () => {
                     </IonButtons>
 
                     <IonButtons slot="end">
-                        {/* <IonRouterLink routerLink='/notification'>
-                            <IonButton className="custom-button">
-                                <IonIcon icon={notificationsSharp} />
-                            </IonButton>
-                        </IonRouterLink> */}
+
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
@@ -28,7 +23,7 @@ const Language = () => {
                 <div className={styles.languageContainer}>
                     <IonCard className={`ion-padding-start ion-padding-end ${styles.languageContent}`}>
                         <p className='ion-text-center'>Select Language</p>
-                        <IonRouterLink routerLink="/home">
+                        <IonRouterLink routerLink="/app/home">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.languageLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.languageLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />
@@ -41,7 +36,7 @@ const Language = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/home">
+                        <IonRouterLink routerLink="/app/home">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.languageLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.languageLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />
@@ -54,7 +49,7 @@ const Language = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/home">
+                        <IonRouterLink routerLink="/app/home">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.languageLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.languageLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />
@@ -67,7 +62,7 @@ const Language = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/home">
+                        <IonRouterLink routerLink="/app/home">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.languageLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.languageLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />
@@ -80,7 +75,7 @@ const Language = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/home">
+                        <IonRouterLink routerLink="/app/home">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.languageLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.languageLinkTabTitle}`}>
                                     <IonIcon icon={earthOutline} />

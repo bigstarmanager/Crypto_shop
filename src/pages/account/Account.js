@@ -86,7 +86,7 @@ const Account = () => {
                                 </IonCol>
                             </IonRow>
                         </IonRouterLink>
-                        <IonRouterLink routerLink="/app/teams">
+                        <IonRouterLink routerLink="/app/team-report">
                             <IonRow className={`ion-justify-content-between ion-align-items-center ${styles.accountLinkTab}`}>
                                 <IonCol size='9' className={`ion-text-left ${styles.accountLinkTabTitle}`}>
                                     <IonIcon icon={peopleOutline} />

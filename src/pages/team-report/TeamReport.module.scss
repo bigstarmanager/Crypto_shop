@@ -1,0 +1,163 @@
+.teamReportPage {
+    ion-toolbar {
+
+        --border-style: none;
+        --border-color: transparent;
+        --padding-start: 1rem;
+        --padding-end: 1rem;
+        --background: #a700ff;
+    }
+
+    .teamReportContainer {
+        min-height: 100%;
+        position: relative;
+        background-color: #ffffff;
+        background-image: radial-gradient(#b8b8b8 1px, transparent 1px),
+            radial-gradient(#b8b8b8 1px, #ffffff 1px);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+        padding: 30px 10px;
+
+        .teamReportHeading {
+            background: #fcedff;
+            border-radius: 10px;
+
+            span {
+                border-radius: 10px;
+                background: #a700ff;
+                color: white;
+                font-weight: bold;
+                font-size: 16px;
+                text-align: center;
+                padding: 0 10px;
+                margin: 0 5px;
+            }
+
+            span.teamReportSelected {
+                background: #00189a;
+            }
+
+            p {
+                font-size: 16px;
+                color: black;
+                text-alig: center;
+            }
+        }
+
+        .teamReportCalendar {
+            ion-icon {
+                font-size: 24px;
+                color: black;
+            }
+        }
+
+        .teamReportContent {
+            background: #fcedff;
+            margin: 20px 0 0 0;
+            border-radius: 10px;
+
+            &>ion-row {
+                border-bottom: 1px solid;
+            }
+
+            .teamReportProductDetail {
+                color: black;
+            }
+
+            .teamCardBody {
+                p {
+                    color: black;
+                    font-size: 16px;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+
+            .teamCardBottom {
+                span {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: black;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                ion-img {
+                    box-shadow: 0px 0px 10px black;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .teamReportSelectDate {
+            color: black;
+            font-size: 20px;
+        }
+
+        .teamReportDate {
+            color: black;
+            opacity: 1 !important;
+            padding-left: 0 !important;
+        }
+
+        .teamReportStatusBtnContent {
+            p {
+                font-size: 16px;
+                font-weight: bold;
+                color: black;
+            }
+
+            span {
+                color: #a700ff;
+                font-size: 16px;
+            }
+        }
+
+        .teamCardTitle1 {
+            display: flex;
+            align-items: center;
+
+            span {
+                border-radius: 20px;
+                background-color: #00189a;
+                color: white;
+                padding: 2px 10px;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+
+        .teamCardTitle2 {
+            display: flex;
+            align-items: center;
+
+            span {
+                border-radius: 20px;
+                background-color: green;
+                color: white;
+                padding: 2px 10px;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+
+        .teamCardTitle3 {
+            display: flex;
+            align-items: center;
+
+            span {
+                border-radius: 20px;
+                background-color: red;
+                color: white;
+                padding: 2px 10px;
+                font-size: 12px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+}

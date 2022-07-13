@@ -21,6 +21,12 @@ const Profile = () => {
         { id: 1, url: '/assets/img/avatar/7.png' },
     ]);
 
+    const [selectedImg, setSelectedImg] = useState("/assets/img/avatar/0.png");
+
+    const clickImg = (e) => {
+        setSelectedImg(e.target.getAttribute('src'));
+    }
+
     return (
         <IonPage className={styles.profilePage}>
             <IonHeader>
@@ -43,7 +49,7 @@ const Profile = () => {
                     <IonCard className={`ion-padding-start ion-padding-end ${styles.profileContent}`}>
                         <IonRow className='ion-margin-top'>
                             <div className={styles.profileContentLogo}>
-                                <IonImg src="/assets/img/avatar/2.png" />
+                                <IonImg src={selectedImg} />
                             </div>
                         </IonRow>
                         <IonRow className='ion-justify-content-center'>
@@ -57,7 +63,7 @@ const Profile = () => {
                             {items.map(item => {
                                 return (
                                     <IonCol size='3' key={item.id}>
-                                        <IonImg src={item.url} />
+                                        <IonImg src={item.url} onClick={clickImg} />
                                     </IonCol>
                                 )
                             })}

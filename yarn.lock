@@ -9564,7 +9564,7 @@ react-app-polyfill@^2.0.0:
 
 react-calendar@^3.7.0:
   version "3.7.0"
-  resolved "https://registry.yarnpkg.com/react-calendar/-/react-calendar-3.7.0.tgz#951d56e91afb33b1c1e019cb790349fbffcc6894"
+  resolved "https://registry.npmjs.org/react-calendar/-/react-calendar-3.7.0.tgz"
   integrity sha512-zkK95zWLWLC6w3O7p3SHx/FJXEyyD2UMd4jr3CrKD+G73N+G5vEwrXxYQCNivIPoFNBjqoyYYGlkHA+TBDPLCw==
   dependencies:
     "@wojtekmaj/date-utils" "^1.0.2"

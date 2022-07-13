@@ -43,12 +43,12 @@ const Home = () => {
 						</IonRow>
 					</IonCard>
 					<IonGrid className={`ion-padding-top ${styles.homeStartBtn}`}>
-						<IonButton expand="block">
-							<IonRouterLink routerLink="/app/cart">
+						<IonRouterLink routerLink="/app/cart">
+							<IonButton expand="block">
 								<IonIcon icon={rocket} />
 								START
-							</IonRouterLink>
-						</IonButton>
+							</IonButton>
+						</IonRouterLink>
 					</IonGrid>
 					<IonGrid className={`ion-padding-top ${styles.homeBtnGroup}`}>
 						<IonRow className='ion-justify-content-center'>

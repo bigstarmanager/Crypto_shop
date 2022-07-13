@@ -29,7 +29,9 @@ const Account = () => {
                     <IonCard className={`ion-padding-top ion-padding-start ion-padding-end ion-no-margin ${styles.accountHeading}`}>
                         <IonRow className={`ion-align-items-center ${styles.accountHeadingItem}`}>
                             <IonCol size='3'>
-                                <IonImg src="/assets/img/avatar/2.png" />
+                                <IonRouterLink routerLink="/app/profile">
+                                    <IonImg src="/assets/img/avatar/2.png" />
+                                </IonRouterLink>
                             </IonCol>
                             <IonCol size='9'>
                                 <IonRow className='ion-align-items-center'>

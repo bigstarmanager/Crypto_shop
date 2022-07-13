@@ -88,5 +88,10 @@
 }
 
 .profileImageBox {
-    border-radius: 50%;
+    ion-img {
+        border-radius: 50%;
+        border: 1px solid #a700ff;
+        width: 70px;
+        height: 70px;
+    }
 }

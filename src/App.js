@@ -49,6 +49,7 @@ import Shipping from './pages/shipping/Shipping';
 import Bank from './pages/bank/Bank';
 import Password from './pages/password/Password';
 import Language from './pages/language/Language';
+import TeamReport from './pages/team-report/TeamReport';
 
 const App = () => (
 	< IonApp >
@@ -143,6 +144,10 @@ const App = () => (
 
 								<Route exact path="/app/laundering">
 									<Laundering />
+								</Route>
+
+								<Route exact path="/app/team-report">
+									<TeamReport />
 								</Route>
 
 								<Route exact path="/app/company-profile">
